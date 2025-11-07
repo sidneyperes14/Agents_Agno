@@ -5,7 +5,7 @@ import json                                                 # Biblioteca para co
 import streamlit as st                                      # Framework que permite criar interfaces web interativas em Python
 
 AGENT_ID = "pdf_agent"                                      # Identificador único do agente configurado no servidor AGNO
-ENDPOINT = f"http://localhost:7777/agents/{AGENT_ID}/runs"  # URL do endpoint responsável por gerenciar as execuções (runs) do agente
+ENDPOINT = f"https://agentapi-0j4b.onrender.com/agents/{AGENT_ID}/runs"  # URL do endpoint responsável por gerenciar as execuções (runs) do agente
 
 # 2 - REQUISICOES/CONEXÃO COM O AGNO FRAMEWORK (SERVER)============                                 # Função responsável pela comunicação com o servidor AGNO
 def get_response(message: str):                             # Define a função que enviará a mensagem ao servidor e processará a resposta
